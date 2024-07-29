@@ -19,7 +19,6 @@
     - [Internal Linking](#internal-linking)
     - [Social Media Integration](#social-media-integration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
