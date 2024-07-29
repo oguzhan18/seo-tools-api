@@ -17,7 +17,7 @@ export class RankCheckerService {
         const link = $(element).attr('href');
         if (link && link.includes(url)) {
           rank = index + 1; // Index 0'dan başladığı için sıralama 1'den başlar.
-          return false; // Loop'u sonlandırmak için
+          return false;
         }
       });
 
@@ -32,16 +32,12 @@ export class RankCheckerService {
       const { data } = await axios.get(url);
       const $ = cheerio.load(data);
       const keywords = [];
-
-      // Meta keywords etiketi arama
       $('meta[name="keywords"]').each((index, element) => {
         const content = $(element).attr('content');
         if (content) {
           keywords.push(...content.split(',').map((keyword) => keyword.trim()));
         }
       });
-
-      // Alternatif olarak meta description etiketi içindeki olası anahtar kelimeleri de çekebiliriz
       if (keywords.length === 0) {
         $('meta[name="description"]').each((index, element) => {
           const content = $(element).attr('content');
