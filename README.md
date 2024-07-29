@@ -1,4 +1,5 @@
-# SEO Tools API
+<h1 align="center"> <img src="https://raw.githubusercontent.com/oguzhan18/seo-tools-api/main/assests/seo-tools-api-logo.png"> </h1>
+<h1 align="center"> <b> SEO Tools API </b></h1>
 
 `seo-tools-api` is a comprehensive collection of SEO tools designed to help webmasters, developers, and SEO professionals optimize websites for better search engine performance. Built using NestJS, this API provides various modules for analyzing and improving different aspects of a website's SEO.
 
