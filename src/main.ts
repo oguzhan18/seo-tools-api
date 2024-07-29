@@ -9,9 +9,9 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle("SEO TOOLS API")
-    .setDescription("All seo checking tool API of a particular website.")
+    .setDescription("All seo checking tool API of a particular website. PLEASE DO NOT TEST WITH SUBDOMAIN")
     .setVersion("1.0")
-    .addTag("seo")
+    .setContact( "SEO TOOLS API", "https://github.com/SEO-Tools-Api", "oguzhancart1@gmail.com" )
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup("api", app, document, {
