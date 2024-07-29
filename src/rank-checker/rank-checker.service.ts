@@ -16,7 +16,7 @@ export class RankCheckerService {
       $('a').each((index, element) => {
         const link = $(element).attr('href');
         if (link && link.includes(url)) {
-          rank = index + 1; // Index 0'dan başladığı için sıralama 1'den başlar.
+          rank = index + 1;
           return false;
         }
       });
