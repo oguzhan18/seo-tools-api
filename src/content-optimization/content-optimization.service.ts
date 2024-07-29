@@ -8,12 +8,9 @@ export class ContentOptimizationService {
     try {
       const { data } = await axios.get(url);
       const $ = cheerio.load(data);
-
-      // Başlık ve meta açıklamaları
       const title = $('title').text();
       const metaDescription = $('meta[name="description"]').attr('content');
-
-      // Anahtar kelime yoğunluğu ve içerik analizi
+ analizi
       const bodyText = $('body').text();
       const wordCount = bodyText.split(/\s+/).length;
       const keywordDensity = this.calculateKeywordDensity(bodyText);
