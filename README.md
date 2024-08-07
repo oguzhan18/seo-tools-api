@@ -39,7 +39,7 @@ To install and run the `seo-tools-api`, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/seo-tools-api.git
+   git clone https://github.com/oguzhan18/seo-tools-api.git
    cd seo-tools-api
     ```
 2. **Install the dependencies:**
