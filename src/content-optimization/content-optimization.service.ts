@@ -10,7 +10,6 @@ export class ContentOptimizationService {
       const $ = cheerio.load(data);
       const title = $('title').text();
       const metaDescription = $('meta[name="description"]').attr('content');
- analizi
       const bodyText = $('body').text();
       const wordCount = bodyText.split(/\s+/).length;
       const keywordDensity = this.calculateKeywordDensity(bodyText);
